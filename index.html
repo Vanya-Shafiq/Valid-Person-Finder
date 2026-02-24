@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Person Search Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Company Person Search Tool</h1>
+            <p>Find who holds a specific position at any company</p>
+        </header>
+
+        <main>
+            <div class="search-section">
+                <form id="searchForm">
+                    <div class="input-group">
+                        <label for="company">Company Name:</label>
+                        <input 
+                            type="text" 
+                            id="company" 
+                            placeholder="e.g., Google, Microsoft, Tesla"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="designation">Designation:</label>
+                        <input 
+                            type="text" 
+                            id="designation" 
+                            placeholder="e.g., CEO, CMO, Founder"
+                            required
+                        >
+                    </div>
+
+                    <div class="test-data-section">
+                        <h3>📋 Test Data Quick Select</h3>
+                        <select id="testDataSelect">
+                            <option value="">Select from test data...</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="searchBtn">
+                        <span class="btn-text">Search</span>
+                        <span class="loading-spinner" style="display: none;">⟳</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="results-section" id="resultsSection" style="display: none;">
+                <h2>Results</h2>
+                <div id="results" class="results-card"></div>
+            </div>
+
+            <div class="error-section" id="errorSection" style="display: none;">
+                <div class="error-card"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Search powered by DuckDuckGo | Results from public sources</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
