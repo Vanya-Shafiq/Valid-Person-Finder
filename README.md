@@ -28,11 +28,10 @@ A powerful search tool that discovers key personnel (CEO, Founder, Directors) at
 ## Usage
 
 1. **Create and activate virtual environment**
-   # On Windows
+   On Windows
     python -m venv venv
     venv\Scripts\activate
-
-  # On macOS/Linux
+   On macOS/Linux
     python3 -m venv venv
     source venv/bin/activate
     
