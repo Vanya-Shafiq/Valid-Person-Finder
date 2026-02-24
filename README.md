@@ -31,21 +31,22 @@ A powerful search tool that discovers key personnel (CEO, Founder, Directors) at
    On Windows
     python -m venv venv
     venv\Scripts\activate
+   
    On macOS/Linux
     python3 -m venv venv
     source venv/bin/activate
     
-2. **Install dependencies**
+3. **Install dependencies**
      pip install -r requirements.txt
 
-3. **Start the backend server**
+4. **Start the backend server**
      cd backend
      python app.py
 
-4. **Open the frontend**
+5. **Open the frontend**
      Open index.html in your web browser
 
-5. **Search for personnel**
+6. **Search for personnel**
     Enter a company name (e.g., "Tesla", "Apple", "Google")
     Enter a designation (e.g., "CEO", "Founder", "CTO")
     Click "Search" and wait for results
